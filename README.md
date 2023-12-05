@@ -6,7 +6,10 @@ This repository contains the assignment solutions related to IIT Computer Vision
    To run the face detection application follow the below steps:
    
    1. Make sure python is installed, if not it can be downloaded from https://www.python.org/downloads/
-   2. Run below command to install requirements from requirements.txt file
+         
+         Install pip using ``` pip install pip ```
+      
+   3. Run below command to install requirements from requirements.txt file
       
       ``` pip install -r requirements.txt ```
       

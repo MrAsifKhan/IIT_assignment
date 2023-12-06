@@ -5,10 +5,10 @@ import numpy as np
 
 # loads the opencv haarcascade classifier for face detection(detects only front view)
 def load_classifier() -> cv2.CascadeClassifier:
-    try:
-        face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-    except AttributeError: # for linux version of opencv
-        face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    if face_cascade.empty():
+        print("Error: Failed to load the cascade classifier")
+        exit()
     return face_cascade
 
 # to calculate the fps

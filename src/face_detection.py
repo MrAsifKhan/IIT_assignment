@@ -5,7 +5,7 @@ import numpy as np
 
 # loads the opencv haarcascade classifier for face detection(detects only front view)
 def load_classifier() -> cv2.CascadeClassifier:
-    face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_cascade = cv2.CascadeClassifier('src/haarcascade_frontalface_default.xml')
     if face_cascade.empty():
         print("Error: Failed to load the cascade classifier")
         exit()

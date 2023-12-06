@@ -3,7 +3,7 @@
 # Check if a camera is connected
 if ls /dev/video* &> /dev/null; then
     echo "Camera found."
-    python3 face_detection.py
+    python3 src/face_detection.py
 else
     echo "Warning: No camera found."
 fi

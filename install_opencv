@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Updating package lists..."
+sudo apt update
+
+echo "Installing OpenCV and its Python bindings..."
+sudo apt install -y libopencv-dev python3-opencv
+
+echo "OpenCV installation completed!"
+

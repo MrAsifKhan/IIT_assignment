@@ -17,4 +17,8 @@ This repository contains the assignment solutions related to IIT Computer Vision
       
       ```python face_detection.py```
       
-   5. Press 'q' key on keyboard to stop the application)
+   5. Press 'q' key on keyboard to stop the application
+
+      Below is a sample output:
+
+      <img src="https://github.com/MrAsifKhan/IIT_assignment/blob/main/sample_outputs/sample_output.png" alt="sample output" width="200"/>

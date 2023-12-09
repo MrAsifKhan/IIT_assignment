@@ -7,7 +7,7 @@ An application for detecting faces in real time using webcame based on OpenCV Py
 
 ## Clone the repository:
 ```bash
-git clone MrAsifKhan/IIT_assignment
+git clone https://github.com/MrAsifKhan/IIT_assignment
 ```
 
 # To run the application follow the procedure accordingly

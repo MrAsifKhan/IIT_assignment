@@ -45,11 +45,11 @@ chmod +x check_and_launch  # might be requried to avoid permission related error
 ### Using Dockerfile:
 a. Open terminal and navigate to the Dockerfile inside project repository
 ```bash
-cd IIT_assignment/docker
+cd IIT_assignment
 ```
 b. Build the docker
 ```bash
-docker build -t <image_name>:<tag> -f face_detection.dockerfile . 
+docker build -t <image_name>:<tag> -f docker/face_detection.dockerfile . 
 ```
 c. **Run the built docker:**
 ```bash

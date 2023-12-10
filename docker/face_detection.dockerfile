@@ -4,8 +4,8 @@ FROM ubuntu:18.04
 WORKDIR /app/
 
 # copying source files
-COPY face_detection.py /app/
-COPY haarcascade_frontalface_default.xml /app/
+COPY src/face_detection.py /app/
+COPY src/haarcascade_frontalface_default.xml /app/
 
 # install dependencies
 RUN apt update

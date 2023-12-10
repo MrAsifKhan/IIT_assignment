@@ -14,6 +14,7 @@ git clone https://github.com/MrAsifKhan/IIT_assignment
 1. [Linux](#linux)
 2. [Docker](#docker)
 3. [Windows](#running-application-on-windows)
+4. [ROS](#ROS)
 
 
 
@@ -101,9 +102,28 @@ pip install -r requirements.txt
       
    d. Press 'q' key on keyboard to stop the application
 
+## ROS
+**Prerequisites:**
+- ROS2.
+- Python
+- colcon (sudo apt install python3-colcon-common-extensions)
+- cv_bridge (sudo apt-get install ros-<dist_name>-cv-bridge)
+### Using Dockerfile:
+a. Open terminal and navigate to project repository
+```bash
+cd IIT_assignment
+```
+b. Run below command to build the ros package
+```bash
+colcon build
+```
+c. Once the built is successful, source the package
+```bash
+source install/setup.bash
+```
+d. Run the launch file
+```bash
+ros2 launch image_processing_pkg image_processing.launch.py
+```
 
-
-      
-
-
-      
+IF encountered any issues, raise an issue or contact on pattanasifkhan97@gmail.com

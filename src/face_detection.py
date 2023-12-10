@@ -12,12 +12,14 @@ def load_classifier() -> cv2.CascadeClassifier:
     return face_cascade
 
 # to calculate the fps
-def calculate_fps(start_time: float, frame_count: int) -> tuple:
+def calculate_fps(start_time: float, frame_count: int, fps: float) -> tuple:
     frame_count += 1
+    interval = 1 # only update fps for every 1 second
     elapsed_time = time.time() - start_time
-    fps = frame_count / elapsed_time
-    frame_count = 0
-    start_time = time.time()
+    if elapsed_time > interval:  
+        fps = frame_count / elapsed_time
+        frame_count = 0
+        start_time = time.time()
     return fps, start_time, frame_count
 
 # to display the calculate fps on the frame output
@@ -59,7 +61,7 @@ def start_face_detection(classifier: cv2.CascadeClassifier, show_fps=True) -> No
             cv2.rectangle(resized_frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
         if show_fps:
-            fps, start_time, frame_count = calculate_fps(start_time, frame_count)
+            fps, start_time, frame_count = calculate_fps(start_time, frame_count, fps)
             display_fps(resized_frame, fps)
 
         cv2.imshow('Face Detection', resized_frame)

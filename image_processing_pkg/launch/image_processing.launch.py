@@ -6,13 +6,13 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='image_processing_pkg',
-            executable='node1.py',
+            executable='node1',
             name='image_resizer',
             output='screen'
         ),
         Node(
             package='image_processing_pkg',
-            executable='node2.py',
+            executable='node2',
             name='image_processor',
             output='screen'
         ),

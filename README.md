@@ -126,4 +126,3 @@ d. Run the launch file
 ros2 launch image_processing_pkg image_processing.launch.py
 ```
 
-IF encountered any issues, raise an issue or contact on pattanasifkhan97@gmail.com
